@@ -1,0 +1,12 @@
+version: "3.0"
+services:
+  OK:
+    image: test
+    build:
+      context: .
+    command: "node run.js"
+  NOK:
+    image: test
+    build:
+      context: .
+    command: "npx jest"
